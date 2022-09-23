@@ -1,0 +1,560 @@
+<!--
+SP Page of Kayven's website
+ST0501: Front-End Web Development
+CA2:Interactive Website
+File Name: SP.html
+Author: Kayven Chieng Yan Heng
+Date:  13/07/2022
+Class: DCITP/FT/1A/02
+Student ID:P2222639
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SP</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/SP.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="..\external-bootstrap\bootstrap-branch\css\bootstrap.min.css">
+  <link rel="stylesheet" href="..\external-bootstrap\bootstrap-branch\css\bootstrap.css">
+
+</head>
+<!--Start of navbar-->
+
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <div class="container p-3">
+      <a class="navbar-brand namelogo text pt-2" href="./index.html"><span class="show">K</span>
+        <span class="captured">a</span>
+        <span class="captured">y</span>
+        <span class="captured">v</span>
+        <span class="captured">e</span>
+        <span class="captured">n</span>
+        <span class="captured bi bi-star-fill"></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link nav-btn" href="./index.html">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-btn" href="./About.html">About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-btn activeblue" href="./SP.html">SP
+
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-btn" href="./Aspirations.html">Aspirations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-btn" href="./Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--End of navbar-->
+  <main>
+    <section class="bg-dark py-4 text-white">
+      <div class="container p-3">
+  <!--Start of carousel-->
+        <section id="friendscarousel" class="bg-dark  py-3 text-white mt-5">
+          <div class="container h-100">
+            <div class="row align-items-center">
+              <div id="pplcarousel" class="carousel col-md-6 col-sm-12 carousel-dark slide shiftleft"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#pplcarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#pplcarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#pplcarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="../pictures/spfriends.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none captionfade bg-opacity-50 d-md-block">
+                      <h5 class="text-white">My classmates and I</h5>
+                      <p class="text-white">Intensive revision before quiz later <i
+                          class="bi bi-emoji-sunglasses-fill"></i></p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="../pictures/cca.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="carousel-caption d-none captionfade bg-opacity-50 d-md-block">
+                        <h5 class="text-white">Outing with some of my cca friends</h5>
+                        <p class="text-white">
+                          Well-planned day at Samuel's house <i class=" bi bi-emoji-smile-upside-down-fill"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="000">
+                    <img src="../pictures/exams.jpg" class="d-block w-100" alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="carousel-caption d-none captionfademore bg-opacity-25 d-md-block">
+                        <h5 class="text-white">STRESS PERIOD!</h5>
+                        <p class="text-white">
+                          Hours before the exam that we barely studied for, LOL! Good luck to us <i
+                            class="bi bi-emoji-dizzy-fill"></i>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#pplcarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#pplcarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="col-md-6 col-12">
+                <h1 class="text-white typewrite">
+                  life in <span class="text-primary">Singapore Polytechnic.<span
+                      class="text-primary blinking">|</span></span>
+                </h1>
+                <br />
+                <br />
+                <p class="shiftleft  movingright">
+                  My experience here in SP has been so good and enriching.
+                  I have met so many kind and considerate people who were willing to help me,
+                  The computing community has many supportive people who has helped me along the way.
+                </p>
+                <br />
+                <p class="shiftleft movingright">
+                  Furthermore,the CCA's here are abundant and I am given so many choices to choose from,
+                  and thankfully being in Sign Language Club, I can learn a new thing or two
+                  by the time I leave this school. :)
+                </p>
+                <br />
+                <p class="shiftleft  movingright">
+                  I am glad I have chosen Singapore Polytechnic as my first choice and
+                  hopefully I can get into my dream course next semester with good grades.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--End of carousel-->
+    </section>
+    <!--Table of daily schedule with popovers-->
+    <section class="bg-light  px-3 py-5">
+      <div class="container table-responsive">
+        <h1>My Daily Routine </h1>
+        <table class="table table-dark table-striped table-bordered text-center table-hover">
+          <colgroup>
+            <col class="headcol" />
+            <col span="18" class="bodycol" />
+          </colgroup>
+          <div class="rowheader">
+            <thead>
+              <tr>
+                <th scope="col" class="align-middle" id="split">&nbsp;</th>
+                <th scope="col" class="align-middle">8:00-8:30</th>
+                <th scope="col" class="align-middle">8:30-9:00</th>
+                <th scope="col" class="align-middle">9:00-9:30</th>
+                <th scope="col" class="align-middle">9:30-10:00</th>
+                <th scope="col" class="align-middle">10:00-10:30</th>
+                <th scope="col" class="align-middle">10:30-11:00</th>
+                <th scope="col" class="align-middle">11:00-11:30</th>
+                <th scope="col" class="align-middle">11:30-12:00</th>
+                <th scope="col" class="align-middle">12:00-12:30</th>
+                <th scope="col" class="align-middle">12:30-13:00</th>
+                <th scope="col" class="align-middle">13:00-13:30</th>
+                <th scope="col" class="align-middle">13:30-14:00</th>
+                <th scope="col" class="align-middle">14:00-14:30</th>
+                <th scope="col" class="align-middle">14:30-15:00</th>
+                <th scope="col" class="align-middle">15:00-15:30</th>
+                <th scope="col" class="align-middle">15:30-16:00</th>
+                <th scope="col" class="align-middle">16:00-16:30</th>
+                <th scope="col" class="align-middle">16:30-17:00</th>
+              </tr>
+            </thead>
+          </div>
+
+          <tbody>
+            <tr>
+              <th scope="row" class="align-middle">Mon</th>
+              <td class="align-middle" colspan="10"></td>
+              <td class="align-middle" colspan="4">
+                <!--ECG-->
+                <button type="button"
+                  class="ECG-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16 xs-font-size13 "
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left"
+                  title="educational Career Guidance"
+                  data-bs-content="The goal of ECG is to provide students like me with the knowledge, abilities, 
+            and values they need to make wise decisions at each significant educational stage, 
+            ensuring a smooth transition from school to postsecondary education or employment. 
+            As a result, I will be better able to manage my career paths and ongoing learning throughout my lives.">ECG</button>
+
+                <div class="margin-10px-top font-size14">13:00-15:00</div>
+                <div class="font-size13 text-light-gray">Mr Lee Kay Beng</div>
+              </td>
+              <td class="align-middle"></td>
+              <td class="align-middle" colspan="3">
+                <!--Math-->
+                <button type="button"
+                  class="MATH-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" title="MATH"
+                  data-bs-content="Mathematics is the science that deals with the logic of shape, quantity and arrangement. 
+            Math is all around us, in everything we do. 
+            It is the building block for everything in our daily lives, including mobile devices, computers, software, architecture (ancient and modern), art, money, engineering and even sports.">MATH</button>
+
+                <div class="margin-10px-top font-size14">15:30-17:00</div>
+                <div class="font-size13 text-light-gray">Mr Yanto Jakop</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="align-middle">Tue</th>
+              <td class="align-middle" colspan="5">
+                <!--FED-->
+                <button type="button"
+                  class="FED-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left"
+                  title="Front-End Development"
+                  data-bs-content="          
+                The process of creating HTML, CSS, and JavaScript for a website or Web application so that a user can see and interact with them directly is known as front-end web development, 
+                sometimes known as client-side development. The difficulty with front end development is that the methods and technologies used to build a website's front end are continually changing, necessitating constant monitoring of the industry's advancements.
+            The goal of website design is to present the content in an understandable and pertinent manner to users as soon as they access the site. 
+            The fact that customers today utilize a wide range of devices with different screen sizes and makes things even more difficult for designers to take into consideration these aspects when designing the site .
+            It is vital to ensure that the site comes up correctly in different browsers (cross-browser), different operating systems (cross-platform) and different devices (cross-device), which requires careful planning on the side of the developer.">FED</button>
+
+                <div class="margin-10px-top font-size14">8:00-10:30</div>
+                <div class="font-size13 text-light-gray">Mr James Ang Wee Teck</div>
+              </td>
+
+              <td class="align-middle" colspan="3"></td>
+              <td class="align-middle" colspan="6">
+                <!--FOP-->
+                <button type="button"
+                  class="FOP-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left"
+                  title="Fundamentals Of Programming" data-bs-content="          
+                The historical and sociological context of computing, fundamental programming concepts (data types, control structures, functions, arrays, pointers, and files), running, testing, and debugging scripts and programs, and an overview of programming paradigms are all covered in this lesson. 
+                Many different languages are used to illustrate and practice various programming topics (javascript,python,ruby,c,c++). 
+                Additionally, the curriculum will educate students on basic programming etiquette and the correct syntax to follow.
+                ">FOP</button>
+
+                <div class="margin-10px-top font-size14">12:00-15:00</div>
+                <div class="font-size13 text-light-gray">Dr John Quah</div>
+              </td>
+
+              <td class="align-middle" colspan="4">
+                <!--FOC-->
+                <button type="button"
+                  class="FOC-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                  title="Fundamentals Of Computing" data-bs-content="  
+                Through object-oriented design and programming, this module introduces the field of computing. 
+                Topics covered include software engineering, generics, inheritance, object identity, classes, data structures, encapsulation, generics, and abstraction. 
+                Practical exercises modeled after real-world contexts serve to reinforce concepts.">FOC</button>
+
+                <div class="margin-10px-top font-size14">15:00-17:00</div>
+                <div class="font-size13 text-light-gray">Mr Lee Kay Beng</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="align-middle">Wed</th>
+              <td class="align-middle" colspan="18">
+                <!--Break-->
+                <button type="button"
+                  class="Break-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Break"
+                  data-bs-content="No school on Wednesday">Break</button>
+
+              </td>
+
+            </tr>
+            <tr>
+              <th scope="row" class="align-middle">Thu</th>
+              <td class="align-middle" colspan="5">
+                <!--FED-->
+                <button type="button"
+                  class="FED-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left"
+                  title="Front-End Development"
+                  data-bs-content="          
+                The process of creating HTML, CSS, and JavaScript for a website or Web application so that a user can see and interact with them directly is known as front-end web development, 
+                sometimes known as client-side development. The difficulty with front end development is that the methods and technologies used to build a website's front end are continually changing, necessitating constant monitoring of the industry's advancements.
+            The goal of website design is to present the content in an understandable and pertinent manner to users as soon as they access the site. 
+            The fact that customers today utilize a wide range of devices with different screen sizes and makes things even more difficult for designers to take into consideration these aspects when designing the site .
+            It is vital to ensure that the site comes up correctly in different browsers (cross-browser), different operating systems (cross-platform) and different devices (cross-device), which requires careful planning on the side of the developer.">FED</button>
+
+                <div class="margin-10px-top font-size14">8:00-10:30</div>
+                <div class="font-size13 text-light-gray">Mr James Ang Wee Teck</div>
+              </td>
+              <td class="align-middle" colspan="3"></td>
+              <td class="align-middle" colspan="6">
+                <!--FOP-->
+                <button type="button"
+                  class="FOP-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left"
+                  title="Fundamentals Of Programming" data-bs-content="          
+                The historical and sociological context of computing, fundamental programming concepts (data types, control structures, functions, arrays, pointers, and files), running, testing, and debugging scripts and programs, and an overview of programming paradigms are all covered in this lesson. 
+                Many different languages are used to illustrate and practice various programming topics (javascript,python,ruby,c,c++). 
+                Additionally, the curriculum will educate students  on basic programming etiquette and the correct syntax to follow.
+                ">FOP</button>
+
+                <div class="margin-10px-top font-size14">12:00-15:00</div>
+                <div class="font-size13 text-light-gray">Dr John Quah</div>
+              </td>
+              <td class="align-middle" colspan="4">
+                <!--FOC-->
+                <button type="button"
+                  class="FOC-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                  title="Fundamentals Of Computing" data-bs-content="  
+                Through object-oriented design and programming, this module introduces the field of computing. 
+                Topics covered include software engineering, generics, inheritance, object identity, classes, data structures, encapsulation, generics, and abstraction. 
+                Practical exercises modeled after real-world contexts serve to reinforce concepts.">FOC</button>
+
+                <div class="margin-10px-top font-size14">15:00-17:00</div>
+                <div class="font-size13 text-light-gray">Mr Lee Kay Beng</div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="align-middle">Fri</th>
+              <td class="align-middle" colspan="4">
+                <!--CPR-->
+                <button type="button"
+                  class="CPR-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left"
+                  title="Communicating for Project Effectiveness"
+                  data-bs-content="Project success is frequently built on effective communication. 
+                The strategy, goals, and budget of a project can be shared by team members and stakeholders through effective communication. 
+                Everyone involved in the project may be better equipped to comprehend our respective responsibilities as a result, which may increase our likelihood of backing the endeavor. 
+                There will then be a presentation to consolidate all the things the team have achieved to demonstrate to the intended audience.">CPR</button>
+
+                <div class="margin-10px-top font-size14">08:30-10:30</div>
+                <div class="font-size13 text-light-gray">Ms Phoebe Seow</div>
+              </td>
+
+              <td class="align-middle" colspan="1"></td>
+              <td class="align-middle" colspan="3">
+                <!--Math-->
+                <button type="button"
+                  class="MATH-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" title="MATH"
+                  data-bs-content="Mathematics is the science that deals with the logic of shape, quantity and arrangement. 
+          Math is all around us, in everything we do. 
+          It is the building block for everything in our daily lives, including mobile devices, computers,
+           software, architecture (ancient and modern), art, money, engineering and even sports.">MATH</button>
+                <div class="margin-10px-top font-size14">10:30-12:00</div>
+                <div class="font-size13 text-light-gray">Mr Yanto Jakop</div>
+              </td>
+
+              <td class="align-middle" colspan="2"></td>
+              <td class="align-middle" colspan="4">
+                <!--CAT-->
+                <button type="button"
+                  class="CAT-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
+                  title="Critical Analytical Thinking"
+                  data-bs-content="The language of strategy is fundamentally critical analytical thought. 
+                Executives are assisted in making decisions in a cooperative, reasoned, and data-driven manner as a result of the added structure and openness it brings to the analysis and creation of strategy.
+                This course will assist you in developing and refining the abilities required to assess complicated problems, create well-supported arguments, and take into account alternative viewpoints. 
+                It will assist you in evaluating data, developing and presenting well-reasoned positions, identifying significant concerns, and assessing creative business models. In this course as well as upcoming ones in this program, you will use those skills to tackle a range of management issues.">CAT</button>
+
+                <div class="margin-10px-top font-size14">13:00-15:00</div>
+                <div class="font-size13 text-light-gray">Ms Melissa Ong</div>
+
+              <td class="align-middle" colspan="4"></td>
+            </tr>
+            <tr>
+              <th scope="row" class="align-middle">Sat</th>
+              <td class="align-middle" colspan="2"></td>
+              <td class="align-middle" colspan="2">
+                <!--Math-->
+                <button type="button"
+                  class="MATH-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" title="MATH"
+                  data-bs-content="Mathematics is the science that deals with the logic of shape, quantity and arrangement. 
+            Math is all around us, in everything we do. 
+            It is the building block for everything in our daily lives, including mobile devices, computers, software, architecture (ancient and modern), art, money, engineering and even sports.">MATH</button>
+
+                <div class="margin-10px-top font-size14">09:00-10:00</div>
+                <div class="font-size13 text-light-gray">Mr Yanto Jakop</div>
+              </td>
+              <td class="align-middle" colspan="2">
+                <!--FIN ED CLASS-->
+                <button type="button"
+                  class="FIN-ED-color padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13"
+                  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Financal Education"
+                  data-bs-content="Understanding and using different financial abilities, such as personal financial management, budgeting, and investing, effectively are referred to as financial literacy. 
+                Your connection with money starts with financial literacy, which you develop throughout your entire life. 
+                Since education is the key to financial success, the earlier you begin, the better off you will be. 
+                It's a personal skill that not everyone learns, but managing your money is one that you'll use throughout your life.">FIN
+                  ED</button>
+
+                <div class="margin-10px-top font-size14">10:00-11:00</div>
+                <div class="font-size13 text-light-gray">self-learning</div>
+              </td>
+
+              <td class="align-middle" colspan="12"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--End of table schdule-->
+    </section>
+
+    <!--Start of accordian-->
+    <section class="bg-dark text-black py-5">
+      <div class="container">
+        <h3 class="text-white">Most Enjoyable modules</h3>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#Firstoption" aria-expanded="false" aria-controls="Firstoption">
+                <h4>Fundamentals Of Programming <i class="bi bi-laptop"></i></h4>
+              </button>
+            </h2>
+            <div id="Firstoption" class="accordion-collapse collapse" aria-labelledby="Favmod1"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body text-black">
+                Fundamentals Of Programming is important as it is a process that leads from an original formulation of a
+                computing problem to executable computer programs.
+                Programming gratifies creative longings built deep within us
+                and delights sensibilities we have in common with all men.
+                I love Programming because it involves activities such as analysis, developing understanding, generating
+                algorithms,
+                verification of requirements of algorithms including my correctness and resources consumption, and
+                implementation (commonly referred to as coding) of algorithms in a target programming language.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Secondoption"
+                aria-expanded="false" aria-controls="Secondoption">
+                <h4>Front End Development <img src="../pictures/filetype-html.svg" alt="html"></h4>
+              </button>
+            </h2>
+            <div id="Secondoption" class="accordion-collapse collapse show" aria-labelledby="Favmod2"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body text-black">
+                Learning Front End Development is important to ensure that website visitors can easily interact with the
+                page.
+                They do this through the combination of design, technology and programming to code a website's
+                appearance,
+                as well as taking care of debugging.Furthermore,
+                Front End Development allows us to work on a variety of interesting things and explore our creativity by
+                adding codes to suit the audience and help them obtain a better user experience when engaging with our
+                website.
+                Once i have mastered the basics in coding, I can slowly progress and move on to UI/UX design that
+                enhances
+                the website design and creativity to attract new users.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#Thirdoption" aria-expanded="false" aria-controls="Thirdoption">
+                <h4>Fundamentals of Computing <i class="bi bi-cpu"></i></h4>
+              </button>
+            </h2>
+            <div id="Thirdoption" class="accordion-collapse collapse" aria-labelledby="Favmod3"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body text-black">
+                This module is essential for my growth of digital literacy and learning computer fundamentals skills
+                related to how computer systems input, store, process, and output data.
+                It also teaches students like me to better grasp and apply technology skills, gain experience applying
+                these
+                skills in real-world scenarios,
+                and augment these skills with computational thinking and problem-solving skills that can be applied
+                across
+                my academic and professional career.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of accordian-->
+  </main>
+
+  <!--Start of footer-->
+  <footer class="footer mt-5">
+    <section class="footer centered">
+      <div class="row">
+        <div class=" footer-menu col-4">
+          <h4 class="footer-title p-4 text-muted fs-2">Other pages</h4>
+          <ul class="text-right fs-3">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./Aspirations.html">Aspirations</a></li>
+          </ul>
+        </div>
+
+        <div class=" footer-menu col-4">
+          <h4 class="footer-title p-4 text-muted fs-2">Contact Me</h4>
+          <ul class="text-right fs-3">
+            <li><i class="bi bi-telephone-fill"></i> &nbsp; 86866556</li>
+            <li><i class="bi bi-envelope-fill"></i> &nbsp; Chiengkayven@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class=" footer-menu col-4">
+          <h4 class="footer-title p-4 text-muted fs-2">Opinions</h4>
+          <ul class="text-right fs-2">
+            <li><a href="./Contact.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 mt-3 p-4">
+              <span class="copyright-text">&#169; 2022 by Kayven.
+              </span>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="github" href="#"><i class="bi bi-github"></i></a></li>
+                <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a class="instagram" href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a class="whatsapp" href="#"><i class="bi bi-whatsapp"></i></a></li>
+                <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+  <!--End of footer-->
+  <!--Scroll back to top icon-->
+  </section>
+  <div onclick="scrollbacktotop()" id="scrollTop">
+    <img src="../pictures/scrollupicon.png" alt="scroll button" />
+  </div>
+    <!--Link to Javascript for common and SP page-->
+  <script src="../javascript/Common.js" defer></script>
+  <script src="..\javascript\SP.js"></script>
+</body>
+
+</html>

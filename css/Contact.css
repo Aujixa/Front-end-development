@@ -1,0 +1,26 @@
+/*
+Contact css Page of Kayven's website
+ST0501: Front-End Web Development
+CA2:Interactive Website
+File Name: Contact.css
+Author: Kayven Chieng Yan Heng
+Date:  20/07/2022
+Class: DCITP/FT/1A/02
+Student ID:P2222639
+*/
+
+
+.end {/*Design of background image of the feedback page to make it more aesthetically pleasing so viewers can be attracted to do the feedback form*/
+    background-image:url("../pictures/end.jpg");
+    background-attachment: fixed;
+  }
+  
+.end-text {/*To create blur effect to blend appreciation text into the background image*/
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    padding: 1.1em;
+    box-shadow: 8px 8px 15px rgb(0, 0, 0);
+    margin: 1em 1.2rem;
+  }

@@ -1,0 +1,185 @@
+/*
+Common css Page of Kayven's website
+ST0501: Front-End Web Development
+CA2:Interactive Website
+File Name: common.css
+Author: Kayven Chieng Yan Heng
+Date:  1/07/2022
+Class: DCITP/FT/1A/02
+Student ID:P2222639
+*/
+
+
+/*Default settings of body*/
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+/*navigation button */
+.nav-btn {
+    font-weight:700;
+    transition: 0.28s ease-in;
+    padding: 1rem;
+    border-radius: 6%;
+}
+
+/*blue color to indicate current page*/
+.activeblue {
+    color: #0275d8 !important;
+    font-weight: bolder;
+}
+
+/*For screen resolution bigger than mobile e.g. ipad,desktop etc.*/
+@media (min-width: 975px) {
+    .nav-btn {
+        border: 2px solid rgb(255, 255, 255);
+        background-color: #181818;
+    }
+    /*Override other css proeprties for current page border to always stay*/
+    .activeblue {
+      border: 2px solid #0275d8 !important;
+    }
+
+    /*When hovering over button*/
+    .nav-btn:hover {
+        color: rgb(255, 255, 255) !important;
+        transform: translateY(-4px);
+        background-image: linear-gradient(340deg, rgb(76, 71, 71),rgb(19, 12, 0));
+    }
+}
+
+/*Special name icon*/
+.namelogo {
+  font-size: 1.5rem !important;
+  color: white;
+  padding-inline: 1rem;
+  box-shadow: 8px 6px 8px rgb(44, 44, 44) ;
+  display: flex;
+  letter-spacing: .16em;
+  text-transform: none !important;
+  font-family: sans-serif;
+  border-radius: 3px;
+  border: 2px solid white;
+}
+
+/*Only show first letter when not hovering*/
+.captured {
+  opacity:0;
+  max-width: 0;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/*Expansion of logo to show full name when hovered, creating a special effect*/
+.namelogo:hover > .captured{
+  opacity: 1;
+  max-width: 1em;
+}
+
+
+/*--------------------------------------------------------------
+Footer styles
+--------------------------------------------------------------*/
+/*Footer background and font color*/
+.footer {
+    padding: 0.8em 1em 0;
+    background: hsl(0, 0%, 5%);
+    color: #FFFCED;
+
+}
+
+/*Footer Headings*/
+.footer-title {
+    font-size: 1.3em;
+}
+
+/*Content of footer*/
+.footer-menu a {
+    display: block;
+    padding-bottom: .5em;
+    color: #FFFCED;
+    text-decoration: none;
+}
+
+/*Content of footer when hovering*/
+.footer-menu a:focus::before,
+.footer-menu a:hover::before {
+    margin-right: .5em;
+    content: ">";
+}
+
+/*Social media icons and hover colors*/
+.social-icons
+{
+  list-style:none
+}
+
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+
+/*Default look without hovering social icons*/
+.social-icons a{
+  background-color:#ecefff;
+  color:#818a91;
+  font-size:25px;
+  display:inline-block;
+  line-height:44px;
+  width:55px;
+  height:55px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .15s linear;
+  transition:all .15s linear
+}
+
+/*Show colors when hovering over*/
+.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+
+.social-icons a.github:hover {
+  background-color: #171515;
+}
+
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+
+.social-icons a.twitter:hover
+{
+
+  background-color:#00aced
+}
+
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+
+.social-icons a.instagram:hover{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.social-icons a.whatsapp:hover {
+  background-color: #4dc247;
+}
+
+/* scrollup button back to top(hovering) */
+
+#scrollTop{
+    position: fixed;
+    right: 0.9em;
+    bottom: 2rem;
+    width:47px;
+    height:47px;
+    display:flex;
+  }
+  

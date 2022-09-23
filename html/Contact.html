@@ -1,0 +1,224 @@
+<!--
+Contact Page of Kayven's website
+ST0501: Front-End Web Development
+CA2:Interactive Website
+File Name: Contact.html
+Author: Kayven Chieng Yan Heng
+Date:  29/07/2022
+Class: DCITP/FT/1A/02
+Student ID:P2222639
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/Contact.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="..\external-bootstrap\bootstrap-branch\css\bootstrap.min.css">
+  <link rel="stylesheet" href="..\external-bootstrap\bootstrap-branch\css\bootstrap.css">
+  <script src="../javascript/Common.js" defer></script>
+</head>
+<!--Start of navbar-->
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container p-3">
+      <a class="navbar-brand namelogo text pt-2" href="./index.html"><span class="show">K</span>
+        <span class="captured">a</span>
+        <span class="captured">y</span>
+        <span class="captured">v</span>
+        <span class="captured">e</span>
+        <span class="captured">n</span>
+        <span class="captured bi bi-star-fill"></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link nav-btn " href="./index.html">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-btn " href="./About.html">About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-btn " href="./SP.html">SP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-btn " href="./Aspirations.html">Aspirations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-btn activeblue" href="./Contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="py-5 end">
+      <div class="container  mt-2 text-center">
+        <div class="col-md-8 col-lg-6 mx-auto">
+          <h1 class="text-light fs-1 fw-lighter end-text">Thank you for visiting! Your response is greatly appreciated!
+          </h1>
+        </div>
+      </div>
+    </section>
+    <!--End of navbar-->
+    <!--Start of form-->
+    <section class="bg-dark p-5 ">
+      <div class="container text-light px-5">
+        <div class="row">
+          <div class="col-8 mx-auto">
+            <!--Form validation-->
+            <form class="needs-validation" novalidate>
+              <div class="row mb-4">
+                <!--Name-->
+                <div class="col-md-6 col-sm-12">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" required class="form-control" id="name" />
+                </div>
+                <!--Phone number-->
+                <div class="col-md-6 col-sm-12">
+                  <label for="phone" class="form-label">Phone number</label>
+                  <input name="userPhone" id="phone" type="tel" pattern="[0-9]{8}" required class="form-control" />
+                </div>
+              </div>
+              <!--Email-->
+              <div class="col-md-12 position-relative">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" required class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp">
+                </div>
+              </div>
+              <!--Selection-->
+              <div class="row mb-4">
+                <div class="slider col-md-9">
+                  <label for="fav" class="form-label">What do you love most about my website?</label>
+                  <select id="fav" class="form-select" aria-label="favourite">
+                    <option selected disabled>Favourite aspect</option><!--Disabled-->
+                    <option value="Theme">Theme</option>
+                    <option value="Pictures">Pictures</option>
+                    <option value="Colors/Aesthetics">Colors/Aesthetics</option>
+                  </select>
+                </div>
+                <!--Date-->
+                <div class="py-1 px-3 col-md-3">
+                  <label for="currentdate">Date of Visit</label>
+                  <div class="input-group mb-4 mt-1">
+                    <input name="currentdate" id="date" class="form-control" type="date" />
+                  </div>
+                </div>
+              </div>
+              <!--Slider-->
+              <div class="mb-5 my-lg-3">
+                <label for="slider" class="form-label">Rate my overall website(left~Worst -> right~Best)</label>
+                <input type="range" class="form-range slider" id="range">
+              </div>
+              <!--Comments box-->
+              <div class="mb-3 text-dark">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">Comments</label>
+                </div>
+              </div>
+              <!--Compulsory checkbox-->
+              <div class="col-md-12 pr-5">
+                <div class="mb-1">
+                  <div class="form-check">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      I agree for recipient to use the above information for improvement purposes only and no sharing of
+                      personal details without prior permission of mine
+                    </label>
+                    <input required class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  </div>
+                </div>
+              </div>
+              <!--Submit button-->
+              <div class="row mb-4">
+                <div class="col-md-8">
+                  <button type="submit" class="btn btn-light fw-bolder mt-3 p-2 px-3">Submit</button>
+                </div>
+              </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--End of form-->
+  <!--Start of footer-->
+  <footer class="footer">
+    <section class="footer centered">
+      <div class="row">
+        <div class=" footer-menu col-4">
+          <h4 class="footer-title p-4 text-muted fs-2">Other pages</h4>
+          <ul class="text-right fs-3">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About.html">About</a></li>
+            <li><a href="./SP.html">SP</a></li>
+            <li><a href="./Aspirations.html">Aspirations</a></li>
+          </ul>
+        </div>
+
+        <div class=" footer-menu col-4">
+          <h4 class="footer-title p-4 text-muted fs-2">Contact Me</h4>
+          <ul class="text-right fs-3">
+            <li><i class="bi bi-telephone-fill"></i> &nbsp; 86866556</li>
+            <li><i class="bi bi-envelope-fill"></i> &nbsp; Chiengkayven@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class=" footer-menu col-4">
+          <h4 class="footer-title p-4 text-muted fs-2">Opinions</h4>
+          <ul class="text-right fs-2">
+            <li><a href="./Contact.html">Feedback</a></li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 mt-3 p-4">
+              <span class="copyright-text">&#169; 2022 by Kayven.
+              </span>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="github" href="#"><i class="bi bi-github"></i></a></li>
+                <li><a class="facebook" href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a class="instagram" href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a class="whatsapp" href="#"><i class="bi bi-whatsapp"></i></a></li>
+                <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+  <!--End of footer-->
+  <!--Scroll back to top icon-->
+  <div onclick="scrollbacktotop()" id="scrollTop">
+    <img src="../pictures/scrollupicon.png" alt="scroll button" />
+  </div>
+      <!--Link to Javascript for Contact page-->
+  <script src="../javascript/Contact.js" defer></script>
+</body>
+
+</html>

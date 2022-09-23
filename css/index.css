@@ -1,0 +1,245 @@
+/*
+index css Page of Kayven's website
+ST0501: Front-End Web Development
+CA2:Interactive Website
+File Name: index.css
+Author: Kayven Chieng Yan Heng
+Date:  12/07/2022
+Class: DCITP/FT/1A/02
+Student ID:P2222639
+*/
+
+
+/*Insertion of background image*/
+.intro {
+  background-image: url("../pictures/home.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Position of intro*/
+.greetings {
+  margin-top: 180px;
+  text-shadow: 5px 4px 3px rgba(0,0,0,0.4),
+               1px 11px 13px rgba(0,0,0,0.1),
+               1px 18px 23px rgba(0,0,0,0.1);
+}
+
+.description {
+  margin-top: 25px;
+}
+  
+/*font for heading*/
+h2 {
+  font-family: sans-serif;
+}
+
+/*more about me with glowing effect of white and blue*/
+.whoami {
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 1px 2px 15px rgb(180, 180, 180);
+  }
+  to {
+    text-shadow: 1px 2px 15px  #0275d8;
+}
+}
+/* Typewriter effect 1 */
+@keyframes typing {
+
+/* +1.1395s(adding),-1.1395s(removing) */  
+  0.0000%, 27.3488% { content: ""; }
+  1.1395%, 26.2093% { content: "e"; }
+  2.2791%, 25.0698% { content: "en"; }
+  3.4186%, 23.9302% { content: "ene"; }
+  4.5581%, 22.7907% { content: "ener"; }
+  5.6977%, 21.6512% { content: "energ"; }
+  6.8372%, 20.5116% { content: "energe"; }
+  7.9767%, 19.3721% { content: "energet"; }
+  9.1163%, 18.2326% { content: "energeti"; }
+  10.2558%, 17.0930% { content: "energetic"; }
+
+  30.7674%, 52.2791% { content: ""; }
+  31.9070%, 51.1395% { content: "a"; }
+  33.0465%, 50.0000% { content: "am"; }
+  34.1860%, 48.8605% { content: "amb"; }
+  35.3256%, 47.7209% { content: "ambi"; }
+  36.4651%, 46.5814% { content: "ambit"; }
+  37.6047%, 45.4419% { content: "ambiti"; }
+  38.7443%, 44.3024% { content: "ambitio"; }
+  39.8835%, 43.1629% { content: "ambitiou"; }
+  41.0230%, 42.0234% { content: "ambitious"; }
+
+  54.6977%, 75.2093% { content: ""; }
+  55.8372%, 74.0698% { content: "f"; }
+  56.9767%, 72.9302% { content: "fr"; }
+  58.1163%, 71.7907% { content: "fri"; }
+  59.2558%, 70.6512% { content: "frie"; }
+  60.3953%, 69.5116% { content: "frien"; }
+  61.5349%, 68.3721% { content: "friendl"; }
+  62.6744%, 67.2326% { content: "friendly"; }
+
+  78.6279%, 96.8605% { content: ""; }
+  79.7674%, 95.7209% { content: "a"; }
+  80.9070%, 94.5814% { content: "a "; }
+  82.0465%, 93.4419% { content: "a lea"; }
+  83.1860%, 92.3023% { content: "a lear"; }
+  84.3256%, 91.1628% { content: "a learn"; }
+  85.4651%, 90.0233% { content: "a learne"; }
+  86.6046%, 88.8838% { content: "a learner"; }
+}
+
+/*Blinking of cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* caret animations */
+#caretholder {
+  position: absolute;
+  bottom: 3rem;
+  right: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+#caret {
+  position: relative;
+  cursor: pointer;
+}
+
+/*Pseudo class before caret effect*/
+#caret::before {
+  height: 15px;
+  width: 15px;
+  content: '';
+  cursor: pointer;
+  position: absolute;
+  border: 3px solid white;
+  border-top: transparent;
+  border-left: transparent;
+  transform: translateY(-160%) rotate(45deg);
+  animation: scroll-down infinite 1.2s ease-in-out;
+  opacity: 1;
+}
+
+/*Pseudo class after caret effect*/
+#caret::after {
+  content: '';
+  cursor: pointer;
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  border: 3px solid white;
+  border-top: transparent;
+  border-left: transparent;
+  transform: translateY(-240%) rotate(45deg);
+  animation: scroll-down infinite 1.5s 0.4s ease-in-out;
+}
+
+/*Different timeframe of the caret*/
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-300%) rotate(45deg);
+    opacity: 1;
+  } 
+
+  100% {
+    transform: translateY(30%) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+
+/*assign color for words to caret color*/
+.typewriter {
+  --caret: currentcolor;
+}
+
+/*duration of animation in one loop*/
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+/*thickness of caret and blink after each letter,hence pseudo element selecters used in this case*/
+.typewriter::after {
+  content: "";
+  border-right: 0.6ch solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+@media (prefers-reduced-motion) {
+  
+  @keyframes sequencePopup {
+    0%, 100% { content: "Energetic"; }
+    25% { content: "Ambitious"; }
+    50% { content: "Friendly"; }
+    75% { content: "a Learner"; }
+  }
+}
+
+/*First heading(Interests)*/
+.header {
+  box-shadow: 13px 15px 10px #cdcbcb;
+}
+
+/*Second heading(Personality)*/
+.header2 {
+  box-shadow: 7px 7px 4px rgb(146, 142, 142);  
+}
+
+/*Adjusments of border style and figure elements*/
+.figure {
+  border-style:groove;
+  border-width: 2px;
+  border-color: #292b2c;
+  border-radius: 5px; 
+  
+} 
+
+/* adjustment of border elements inside figures */
+.figure figcaption {
+  border-style:solid; 
+  border-width: 2px;
+  border-color: #444546;
+  border-radius: 5px; 
+}
+
+
+.table {
+  box-shadow:rgb(93, 92, 92) -10px -15px 15px,inset white 4px 4px 4px;
+}
+
+/*Using animation of changing radius for picture*/
+#family-img {
+  padding-left: 25px;
+    animation: changing-radius 4s infinite ease;
+  }
+  
+  @keyframes changing-radius {
+    0% {
+      border-radius: 63% 25% 27% 73% / 66% 44% 56% 34%;
+    }
+    30% {
+      border-radius: 25% 65% 16% 84% / 79% 23% 79% 21%;
+    }
+    60% {
+      border-radius: 32% 65% 55% 41% / 28% 34% 69% 60%;
+    }
+    100% {
+      border-radius: 63% 25% 27% 73% / 66% 44% 56% 34%;
+    }
+  }
+
+
+
+
+
+

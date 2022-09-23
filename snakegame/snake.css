@@ -1,0 +1,22 @@
+/*
+styles css Page FOR SNAKE GAME of Kayven's website
+ST0501: Front-End Web Development
+CA2:Interactive Website
+File Name: styles.css
+Author: Kayven Chieng Yan Heng
+Date:  29/07/2022
+Class: DCITP/FT/1A/02
+Student ID:P2222639
+*/
+
+
+
+/*default settings*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}

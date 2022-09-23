@@ -1,0 +1,177 @@
+/*
+About css Page of Kayven's website
+ST0501: Front-End Web Development
+CA2:Interactive Website
+File Name: About.css
+Author: Kayven Chieng Yan Heng
+Date:  13/07/2022
+Class: DCITP/FT/1A/02
+Student ID:P2222639
+*/
+
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Overall body and font color*/
+body {
+  background-color: #292b2c;
+  font-family: sans-serif;
+  color: white;
+}
+
+h1 {
+  color: white;
+  text-align:center;
+  font-size: 40px;
+}
+
+/*Insertion of background image*/
+.journey {
+  background-image:url("../pictures/journey.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Main header for timeline with typewriter effect*/
+.heading h1 {
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  padding-left: 400px;
+  display: inline-block;
+  overflow: hidden; 
+  border-right: .13em solid #292b2c;
+  white-space: nowrap; 
+  letter-spacing: .16em;
+  animation: typing 3.5s steps(40,end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing{
+  from {max-width: 0}
+  to {max-width: 100%}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  0%  { border-color: transparent }
+  50% { border-color: #292b2c; }
+}
+
+/* Usage of CSS filter */
+.figure {
+  -webkit-filter:drop-shadow(14px 14px 10px rgb(0,0,0)) ;
+  filter: drop-shadow(14px 14px 10px rgb(0, 0, 0));
+}
+
+/*To give an old vintage look to the picture*/
+.old-pic {
+  -webkit-filter: sepia(60%);
+  filter:sepia(60%)
+}
+
+/*Position of picture in text*/
+.secondary-sch {
+  float: right;
+}
+
+/* Timeline */
+.timeline ul {
+  padding: 40px 0;
+}
+
+.timeline ul li {
+  position:relative;
+  list-style-type: none;
+  width: 6px;
+  background-color: #292b2c;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+/*After fading in*/
+.timeline ul li::after {
+  position:absolute;
+  background: rgb(0, 0, 0);
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-radius: 65%;
+  left:50%;
+  transform: translateX(-45%);/*align  circle to line */
+  bottom: 0;/*Allow middle timeline circle to overlap the lines */
+  }
+
+/*Settings for timeline content*/
+.timeline ul li div{
+  position: relative;
+  background-color: #292b2c;
+  width: 400px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/*Appearance of left(even) and right(odd) timeline*/
+.timeline ul li:nth-child(odd) div {
+  left: 40px;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -445px;
+}
+
+time {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/*Fading in effect*/
+.timeline ul li div {
+  color: white; 
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.show div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+/*for mobile view*/
+@media screen and (max-width: 975px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -290px;
+  }
+}
+
+/*Color of side projects*/
+.purple-color {
+  color: rgb(127, 44, 237);
+}
+
+/*For the first letter of each paragraph used drop cap*/
+p:first-of-type::first-letter{
+  font-size: 4em;
+  float: left;
+  line-height: 0.7em;
+  font-family: serif;
+}

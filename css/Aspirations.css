@@ -1,0 +1,54 @@
+/*
+Aspirations css Page of Kayven's website
+ST0501: Front-End Web Development
+CA2:Interactive Website
+File Name: Aspirations.css
+Author: Kayven Chieng Yan Heng
+Date:  19/07/2022
+Class: DCITP/FT/1A/02
+Student ID:P2222639
+*/
+
+
+/* Usage of linear-gradient & border element*/
+.header {/*To make header more appealing and easy to see, as colour of box changes from black to white,
+          the text changes from white to black,creating a perfect BALANCE*/
+  background-image: linear-gradient(to right, #1d1d28, #cfcfcf);
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding:5px;
+}
+
+.future {/*Insertion of background image*/
+  background-image:url("../pictures/calm.jpg");
+  background-attachment: fixed;
+}
+
+
+.visions-more {/*Create blurry effect for main text*/
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  padding: 1.5em;
+  box-shadow: 8px 8px 15px rgb(0, 0, 0);
+  margin: 1em 1.2rem;
+}
+
+
+@media (max-width: 975px) {/*Only for mobile view*/
+
+      .header {/*Expand size of header*/
+        padding:10px;
+        margin-top:5px;
+        font-size:2rem;
+      }
+      
+      .visions-more {/*Adjust margin to align and centralise main text box*/
+        margin-top: 40px;
+      }
+
+      .footer {/*To ensure footer does not overlap with current page screen resolution*/
+        overflow-x: hidden;
+      }
+}
